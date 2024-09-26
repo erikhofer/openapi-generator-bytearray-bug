@@ -1,0 +1,43 @@
+openapi: 3.1.0
+info:
+  title: Example API
+  version: 1.0.0
+
+paths:
+  /example/byteArray:
+    get:
+      operationId: getByteArray
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ByteArray'
+          description: OK
+      tags:
+        - Example
+  /example/somethingElse:
+    get:
+      operationId: getSomethingElse
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SomethingElse'
+          description: OK
+      tags:
+        - Example
+
+components:
+  schemas:
+    ByteArray:
+      type: object
+      properties:
+        foo:
+          type: string
+    SomethingElse:
+      type: object
+      properties:
+        foo:
+          type: string
