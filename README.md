@@ -1,0 +1,1 @@
+Reproduction for https://github.com/OpenAPITools/openapi-generator/issues/19688
